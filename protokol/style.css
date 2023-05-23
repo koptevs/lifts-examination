@@ -1,0 +1,39 @@
+html {
+    font-size: 14px;
+}
+
+.danger {
+    color: red; 
+    font-weight: bold;
+}
+
+.success{
+    color: rgb(0, 124, 52); 
+    font-weight: bold;
+}
+.check-header {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 2px;
+    padding-left: 5px;
+    color: rgb(48, 48, 48);
+    background-color: rgb(139, 184, 226);
+    margin-bottom: 1rem;
+}
+.form-check-input {
+    margin-right: 3px;
+}
+.checkbox-img {
+    width: 22px;
+    position: relative; 
+    top:-3px; 
+    margin-right: 3px;
+}
+.checkbox-group-wrapper {
+    width: 100%;
+    padding: 5px;
+    border: 0.5px solid #bdbdbd;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+}
