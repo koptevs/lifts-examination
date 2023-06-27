@@ -17,9 +17,11 @@ if ( ! defined( 'WPINC' ) ) {
 
 require_once plugin_dir_path( __FILE__ ) . '/post-types/register.php';
 require_once plugin_dir_path( __FILE__ ) . '/custom-fields/register.php';
+require_once plugin_dir_path( __FILE__ ) . '/graphql-fields/register.php';
 
 add_action( 'init', 'skriemelis_register_lifts_type' );
 add_action( 'carbon_fields_register_fields', 'crb_attach_lift_fields' );
+add_action( 'graphql_register_types', 'graphql_register_lift_fields' );
 
 add_action( 'init', 'skriemelis_register_parbaude_type' );
 add_action( 'carbon_fields_register_fields', 'crb_attach_parbaude_fields' );
