@@ -10,7 +10,7 @@ function crb_attach_lift_fields() {
 	->add_fields(
 		array(
 
-			Field::make( 'text', 'crb_lifts_reg_nr', 'Bir Reg. Nr.' )->set_width( 50 ),
+			Field::make( 'text', 'crb_lifts_reg_nr', 'Bir Reg. Nr.' )->set_width( 50 )->set_classes( 'test-class-1 test-class-2' ),
 			// Field::make( 'text', 'crb_tips', 'Tips' )->set_width( 50 ),
 			Field::make( 'radio', 'crb_lifts_tips', 'Tips' )
 			->set_options(
@@ -28,7 +28,7 @@ function crb_attach_lift_fields() {
 				)
 			)->set_width( 25 ),
 
-			Field::make( 'text', 'crb_lifts_lifts_uzstaditajs', 'uzstaditajs' )->set_width( 50 ),
+			Field::make( 'text', 'crb_lifts_uzstaditajs', 'uzstaditajs' )->set_width( 50 ),
 			Field::make( 'text', 'crb_lifts_razotajs', 'razotajs' )->set_width( 50 ),
 
 			Field::make( 'text', 'crb_lifts_rupn_nr', 'rupn_nr' )->set_width( 33.33 ),
