@@ -25,9 +25,11 @@ add_action( 'graphql_register_types', 'graphql_register_lift_fields' );
 
 add_action( 'init', 'skriemelis_register_parbaude_type' );
 add_action( 'carbon_fields_register_fields', 'crb_attach_parbaude_fields' );
+add_action( 'graphql_register_types', 'graphql_register_parbaude_fields' );
 
 add_action( 'init', 'skriemelis_register_valditajs_type' );
 add_action( 'carbon_fields_register_fields', 'crb_attach_valditajs_fields' );
+add_action( 'graphql_register_types', 'graphql_register_valditajs_fields' );
 
 
 // add_action( 'init', 'skriemelis-register_parvaldnieks_type' );

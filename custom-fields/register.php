@@ -54,6 +54,30 @@ function crb_attach_lift_fields() {
 	);
 }
 
+function crb_attach_valditajs_fields() {
+
+	Container::make( 'post_meta', 'Custom Data' )
+	->where( 'post_type', '=', 'valditajs' )
+	->add_fields(
+		array(
+			Field::make( 'text', 'crb_valditajs_nosaukums', 'Nosaukums' )->set_width( 50 ),
+			Field::make( 'text', 'crb_valditajs_adrese', 'Adrese' )->set_width( 50 ),
+			Field::make( 'text', 'crb_valditajs_reg_nr', 'Reģistrācijas numurs' )->set_width( 50 ),
+			Field::make( 'text', 'crb_valditajs_liguma_nr', 'Līguma numurs' )->set_width( 50 ),
+			Field::make( 'text', 'crb_valditajs_liguma_datums', 'valditajs_liguma_datums' )->set_width( 50 ),
+			Field::make( 'text', 'crb_valditajs_kontakt_person', 'valditajs_kontakt_person' )->set_width( 50 ),
+			Field::make( 'text', 'crb_valditajs_kontakt_person_talrunis', 'valditajs_kontakt_person_talrunis' )->set_width( 50 ),
+			Field::make( 'text', 'crb_valditajs_kontakt_person_talrunis_rekinam', 'valditajs_kontakt_person_talrunis_rekinam' )->set_width( 50 ),
+			Field::make( 'text', 'crb_valditajs_bankas_nosaukums', 'valditajs_bankas_nosaukums' )->set_width( 50 ),
+			Field::make( 'text', 'crb_valditajs_bankas_kods', 'valditajs_bankas_kods' )->set_width( 50 ),
+			Field::make( 'text', 'crb_valditajs_bankas_konts', 'valditajs_bankas_konts' )->set_width( 50 ),
+			Field::make( 'text', 'crb_valditajs_rekina_apmaksas_dienas', 'valditajs_rekina_apmaksas_dienas' )->set_width( 50 ),
+			Field::make( 'text', 'crb_valditajs_piezimes', 'valditajs_piezimes' )->set_width( 50 ),
+			Field::make( 'text', 'crb_valditajs_protokols_ar_merijumiem', 'valditajs_protokols_ar_merijumiem' )->set_width( 50 ),
+		)
+	);
+}
+
 function crb_attach_parbaude_fields() {
 
 	Container::make( 'post_meta', 'Custom Data' )
@@ -197,30 +221,6 @@ function crb_attach_parbaude_fields() {
 			Field::make( 'textarea', 'crb_parbaude_neatbilstibas_0', 'Neatbilstības ar vertējumu 0' ),
 			Field::make( 'separator', 'crb2_separator', 'Piezīmes long long text. Piezīmes long long text. Piezīmes long long text. Piezīmes long long text. Piezīmes long long text. Piezīmes long long text. Piezīmes long long text. Piezīmes long long text. Piezīmes long long text. Piezīmes long long text. Piezīmes long long text. Piezīmes long long text. ' )->set_classes( 'separator' ),
 			Field::make( 'textarea', 'crb_parbaude_piezimes', 'Piezimes' )->set_rows( '3' ),
-		)
-	);
-}
-
-function crb_attach_valditajs_fields() {
-
-	Container::make( 'post_meta', 'Custom Data' )
-	->where( 'post_type', '=', 'valditajs' )
-	->add_fields(
-		array(
-			Field::make( 'text', 'crb_valditajs_nosaukums', 'valditajs_nosaukums' )->set_width( 50 ),
-			Field::make( 'text', 'crb_valditajs_adrese', 'valditajs_adrese' )->set_width( 50 ),
-			Field::make( 'text', 'crb_valditajs_reg_nr', 'valditajs_reg_nr' )->set_width( 50 ),
-			Field::make( 'text', 'crb_valditajs_liguma_nr', 'valditajs_liguma_nr' )->set_width( 50 ),
-			Field::make( 'text', 'crb_valditajs_liguma_datums', 'valditajs_liguma_datums' )->set_width( 50 ),
-			Field::make( 'text', 'crb_valditajs_kontakt_person', 'valditajs_kontakt_person' )->set_width( 50 ),
-			Field::make( 'text', 'crb_valditajs_kontakt_person_talrunis', 'valditajs_kontakt_person_talrunis' )->set_width( 50 ),
-			Field::make( 'text', 'crb_valditajs_kontakt_person_talrunis_rekinam', 'valditajs_kontakt_person_talrunis_rekinam' )->set_width( 50 ),
-			Field::make( 'text', 'crb_valditajs_bankas_nosaukums', 'valditajs_bankas_nosaukums' )->set_width( 50 ),
-			Field::make( 'text', 'crb_valditajs_bankas_kods', 'valditajs_bankas_kods' )->set_width( 50 ),
-			Field::make( 'text', 'crb_valditajs_bankas_konts', 'valditajs_bankas_konts' )->set_width( 50 ),
-			Field::make( 'text', 'crb_valditajs_rekina_apmaksas_dienas', 'valditajs_rekina_apmaksas_dienas' )->set_width( 50 ),
-			Field::make( 'text', 'crb_valditajs_piezimes', 'valditajs_piezimes' )->set_width( 50 ),
-			Field::make( 'text', 'crb_valditajs_protokols_ar_merijumiem', 'valditajs_protokols_ar_merijumiem' )->set_width( 50 ),
 		)
 	);
 }

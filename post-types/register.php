@@ -66,6 +66,9 @@ function skriemelis_register_parbaude_type() {
 		'show_ui'               => true,
 		'show_in_rest'          => true,
 		'rest_base'             => '',
+		'show_in_graphql'       => true,
+		'graphql_single_name'   => 'parbaude',
+		'graphql_plural_name'   => 'parbaudes',
 		'rest_controller_class' => 'WP_REST_Posts_Controller',
 		'rest_namespace'        => 'wp/v2',
 		'has_archive'           => 'parbaudes',
@@ -86,7 +89,6 @@ function skriemelis_register_parbaude_type() {
 		// 'supports'              => array( 'title', 'editor', 'thumbnail' ),
 		'supports'              => array( 'title' ),
 		'taxonomies'            => array( 'category', 'post_tag' ),
-		'show_in_graphql'       => false,
 	);
 
 	register_post_type( 'parbaude', $args );
@@ -111,6 +113,9 @@ function skriemelis_register_valditajs_type() {
 		'show_ui'               => true,
 		'show_in_rest'          => true,
 		'rest_base'             => '',
+		'show_in_graphql'       => true,
+		'graphql_single_name'   => 'valditajs',
+		'graphql_plural_name'   => 'valditaji',
 		'rest_controller_class' => 'WP_REST_Posts_Controller',
 		'rest_namespace'        => 'wp/v2',
 		'has_archive'           => 'valditaji',
@@ -131,7 +136,6 @@ function skriemelis_register_valditajs_type() {
 		// 'supports'              => array( 'title', 'editor', 'thumbnail' ),
 		'supports'              => array( 'title' ),
 		'taxonomies'            => array( 'category', 'post_tag' ),
-		'show_in_graphql'       => false,
 	);
 
 	register_post_type( 'valditajs', $args );
